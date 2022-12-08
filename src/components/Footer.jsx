@@ -1,4 +1,5 @@
 import React from "react";
+import { a, Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -14,10 +15,10 @@ const Footer = () => {
                     <p>Calle Siempre Viva 123</p>
                 </div>
                 <div className="col-md-4 d-flex justify-content-end align-items-center">
-                    <a href="#"><img src="images/facebook.png" className="me-1" alt="Facebook" width="32" /></a>
-                    <a href="#"><img src="images/instagram.png" className="me-1" alt="Instagram" width="32" /></a>
-                    <a href="#"><img src="images/whatsapp.png" className="me-1" alt="WhatsApp" width="32" /></a>
-                    <a href="#"><img src="images/maps.png" className="me-1" alt="Google Maps" width="32" /></a>
+                    <Link to={"/"}><img src={"images/facebook.png"} className="me-1" alt={"Facebook"} width={"32"} /></Link>
+                    <Link to={"/"}><img src={"images/instagram.png"} className="me-1" alt={"Instagram"} width={"32"} /></Link>
+                    <Link to={"/"}><img src={"images/whatsapp.png"} className="me-1" alt={"WhatsApp"} width={"32"} /></Link>
+                    <Link to={"/"}><img src={"images/maps.png"} className="me-1" alt={"Google Maps"} width={"32"} /></Link>
                 </div>
             </div>
         </div>
