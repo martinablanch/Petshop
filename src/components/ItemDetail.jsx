@@ -1,7 +1,19 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
+    const[itemStock, setItemStock] = useState(0);
+
+    const onAdd = (quantity) => {
+        setItemStock(itemStock - quantity);
+    }
+
+    useEffect(()=>{
+        setItemStock(item.stock);
+    },[item])
+
     return (
         <div className="container">
             <div className="row">
@@ -15,7 +27,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 d-flex justify-content-center pb-5">
-                        <ItemCount stock={10} />
+                        <ItemCount stock={item.stock} onAdd={onAdd}/>
                     </div>
                 </div>
             </div>
