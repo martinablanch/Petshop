@@ -5,10 +5,12 @@ import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Error404 from "./components/Error404";
 import Footer from "./components/Footer";
+import CartContextProvider from "./components/context/CartContext";
 
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -19,6 +21,7 @@ function App() {
       </Routes>
       <Footer />
    </BrowserRouter>
+   </CartContextProvider>
   );
 }
 
