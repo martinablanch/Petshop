@@ -28,8 +28,16 @@ const CartContextProvider = ({ children }) => {
         setCart([]);
     }
 
+    const cartTotal = () => {
+        return cart.reduce((total, item) => total += item.quantity, 0); //total = acumulador; item = variable de iteración; 0 = valor inicial
+    }
+
+    const totalPrice = () => {
+        return cart.reduce((total, item) => total += item.quantity * item.price, 0);
+    }
+
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clear }}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clear, cartTotal, totalPrice }}>
             {children}
         </CartContext.Provider>
     )
