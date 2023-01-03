@@ -1,8 +1,8 @@
-import { addDoc, getFirestore, collection, getDocs, where,  query } from "firebase/firestore";
+import { addDoc, getFirestore, collection, getDocs, where, query } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import ItemList from "./ItemList";
-//import arrayProducts from "./json/products.json";
+import arrayProducts from "./json/products.json";
 
 const ItemListContainer = () => {
 
@@ -37,11 +37,24 @@ const ItemListContainer = () => {
     useEffect(() => {
         const db = getFirestore();
         const itemsCollections = collection(db, "items");
-        const q = query(itemsCollections, where("price", "<", 1300));
+
+        //Para filtrar por precio
+        const q = query(itemsCollections, where("price", "<", 1500));
+        //Puedo agregar botones para filtrados
+
+        //Si tendo ID, puedo filtrar los productos por ID, sino traigo la colección entera. (Filtrado por categoría)
+        /* const q = id ? query(itemsCollections, where("categoria", "==", id)) : itemsCollections; */
+
+        //Cargar los productos a Firebase 
+        /*       arrayProducts.forEach((item) => {
+                  addDoc(itemsCollections, item);
+              }) */
+
+
         getDocs(q).then((snapShot) => {
             setItems(snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
         })
-    },[])
+    }, [id])
 
     return (
         <div className="container">
