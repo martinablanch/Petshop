@@ -39,7 +39,7 @@ const ItemListContainer = () => {
         const itemsCollections = collection(db, "items");
 
         //Para filtrar por precio
-        const q = query(itemsCollections, where("price", "<", 1500));
+        const q = query(itemsCollections, where("price", "<", 2000));
         //Puedo agregar botones para filtrados
 
         //Si tendo ID, puedo filtrar los productos por ID, sino traigo la colección entera. (Filtrado por categoría)

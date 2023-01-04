@@ -60,7 +60,7 @@ const Cart = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12 d-flex justify-content-center">
-                                <button className="btn btn-dark ">Finalizar compra</button>
+                                <Link to={"/checkout"} className="btn btn-dark ">Finalizar compra</Link>
                             </div>
                         </div>
                     </div>
