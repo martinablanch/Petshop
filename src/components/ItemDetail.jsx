@@ -4,17 +4,17 @@ import { CartContext } from "./context/CartContext";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ item }) => {
-    const {addItem} = useContext(CartContext);
-    const[itemStock, setItemStock] = useState(0);
+    const { addItem } = useContext(CartContext);
+    const [itemStock, setItemStock] = useState(0);
 
     const onAdd = (quantity) => {
         setItemStock(itemStock - quantity);
         addItem(item, quantity);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         setItemStock(item.stock);
-    },[item])
+    }, [item])
 
     return (
         <div className="container">
@@ -29,7 +29,7 @@ const ItemDetail = ({ item }) => {
                 </div>
                 <div className="row">
                     <div className="col-md-12 d-flex justify-content-center pb-5">
-                        <ItemCount stock={item.stock} onAdd={onAdd}/>
+                        <ItemCount stock={item.stock} onAdd={onAdd} />
                     </div>
                 </div>
             </div>

@@ -1,10 +1,9 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
     return (
-        <div className="container bg-light mb-5">
+        <div className="container-fluid bg-light mb-5">
             <div className="row">
                 <nav className="navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
@@ -26,34 +25,27 @@ const NavBar = () => {
                                     </ul>
                                 </div>
 
-
-
-
                                 <div className="dropdown-center">
                                     <button className="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         SERVICIOS
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <li><NavLink className="dropdown-item" to={"/category/perros"}>Veterinaria</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to={"/category/gatos"}>Peluquería</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to={"/category/gatos"}>Paseos</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to={"/category/gatos"}>Adiestramiento</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to={"/category/gatos"}>Nutricionista</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to={"/category/veterinaria"}>Veterinaria</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to={"/category/peluqueria"}>Peluquería</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to={"/category/paseos"}>Paseos</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to={"/category/adiestramiento"}>Adiestramiento</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to={"/category/nutricionista"}>Nutricionista</NavLink></li>
                                     </ul>
                                 </div>
 
-
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" activeclassname="page" to={"/category/refugio"}>REFUGIO</NavLink>
+                                    <NavLink className="nav-link" to={"/category/refugio"}>REFUGIO</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" activeclassname="page" to={"/category/curiosidades"}>CURIOSIDADES</NavLink>
+                                    <NavLink className="nav-link" to={"/category/ayuda"}>AYUDA</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" activeclassname="page" to={"/category/ayuda"}>AYUDA</NavLink>
-                                </li>
-                                <li className="nav-item">
-                                    <NavLink className="nav-link" activeclassname="page" to={"/category/contacto"}>CONTACTO</NavLink>
+                                    <NavLink className="nav-link" to={"/category/contacto"}>CONTACTO</NavLink>
                                 </li>
                             </ul>
                         </div>

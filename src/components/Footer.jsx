@@ -1,10 +1,9 @@
-import React from "react";
-import { a, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="container bg-light">
-            <div className="row">
+        <div className="container bg-light border-top">
+            <div className="row my-3">
                 <div className="col-md-4">
                     <img src="../images/logo.png" alt="Logo" width="80" />
                     <h2>BARTO</h2>
