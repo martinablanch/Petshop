@@ -11,7 +11,7 @@ const Footer = () => {
                 </div>
                 <div className="col-md-4">
                     <p>Ciudad de San Rafael, Mendoza, Argentina</p>
-                    <p>Calle Siempre Viva 123</p>
+                    <p>Avenida Siempreviva 742</p>
                 </div>
                 <div className="col-md-4 d-flex justify-content-end align-items-center">
                     <Link to={"/"}><img src={"../images/facebook.png"} className="me-1" alt={"Facebook"} width={"32"} /></Link>

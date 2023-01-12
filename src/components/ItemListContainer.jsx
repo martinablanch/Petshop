@@ -30,7 +30,6 @@ const ItemListContainer = () => {
 
     return (
         <div className="container">
-            {/* <h3 className="text-center mb-5">Productos</h3> */}
             {loading ? <Loading /> : <ItemList items={items} />}
         </div>
     )

@@ -10,6 +10,7 @@ import Checkout from "./components/Checkout";
 import CompletedPurchase from "./components/CompletedPurchase";
 import Cover from "./components/Cover";
 import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
 
 
 function App() {
@@ -19,9 +20,9 @@ function App() {
       <NavBar />
       <Cover />
       <Routes>
+        <Route path={"/servicios"} element={<Services />} /> 
         <Route path={"/"} element={<AboutUs />}/>
-        {/* <Route path={"/"} element={<ItemListContainer />}/> */}
-        <Route path={"/category/:id"} element={<ItemListContainer />}/>
+        <Route path={"/category/:id"} element={<ItemListContainer />}/> 
         <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
         <Route path={"/cart"} element={<Cart />}/>
         <Route path={"/checkout"} element={<Checkout />}/>
