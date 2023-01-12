@@ -12,7 +12,7 @@ const CompletedPurchase = () => {
                     <h1>¡Gracias por tu compra!</h1>
                     <p>Tu número de orden es: {id}</p>
                 </div>
-                <div className="align-middle">
+                <div className="justify-content-center">
                     <Link to={"/"} className="btn btn-dark"> Volver al inicio</Link>
                 </div>
             </div>
