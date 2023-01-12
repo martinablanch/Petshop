@@ -3,7 +3,7 @@ const AboutUs = () => {
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-6">
-                    <img src="../images/aboutme.jpg" alt="Soy Barto" className="img-fluid"/>
+                    <img src="../images/aboutme.jpg" alt="Soy Barto" className="img-fluid" />
                 </div>
                 <div className="col-md-6">
                     <h1>¡Hola a todos, soy Barto!</h1>

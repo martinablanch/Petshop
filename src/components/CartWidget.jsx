@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "./context/CartContext";
 
 const CartWidget = () => {
-    const {cartTotal} = useContext(CartContext);
+    const { cartTotal } = useContext(CartContext);
 
     return (
         <Link to={"/cart"} className="btn bg-light position-relative">

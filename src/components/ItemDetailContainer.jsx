@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
                 console.log("El producto no está disponible");
             }
         })
-    }, [id]) 
+    }, [id])
 
     return (
         <div className="container">

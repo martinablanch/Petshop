@@ -23,9 +23,9 @@ function App() {
       <Cover />
       <Routes>
         <Route path={"/servicios"} element={<Services />} /> 
-        <Route path={"/refugio"} element={<Refugio />} />
-        <Route path={"/ayuda"} element={<Help />} />
-        <Route path={"/contacto"} element={<Contact />} />
+        <Route path={"/category/refugio"} element={<Refugio />} />
+        <Route path={"/category/ayuda"} element={<Help />} />
+        <Route path={"/category/contacto"} element={<Contact />} />
         <Route path={"/"} element={<AboutUs />}/>
         <Route path={"/category/:id"} element={<ItemListContainer />}/> 
         <Route path={"/item/:id"} element={<ItemDetailContainer />}/>

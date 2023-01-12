@@ -26,7 +26,6 @@ const Checkout = () => {
             setOrderID(snapShot.id);
             const batch = writeBatch(db);
 
-            //REVISAR
             cart.forEach(item => {
                 let product = doc(db, "items", item.id);
                 getDoc(product).then((snapShot) => {
