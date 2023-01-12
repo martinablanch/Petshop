@@ -11,6 +11,7 @@ import CompletedPurchase from "./components/CompletedPurchase";
 import Cover from "./components/Cover";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
+import Refugio from "./components/Refugio";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Cover />
       <Routes>
         <Route path={"/servicios"} element={<Services />} /> 
+        <Route path={"/refugio"} element={<Refugio />} /> 
         <Route path={"/"} element={<AboutUs />}/>
         <Route path={"/category/:id"} element={<ItemListContainer />}/> 
         <Route path={"/item/:id"} element={<ItemDetailContainer />}/>
