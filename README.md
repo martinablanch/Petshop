@@ -1,3 +1,5 @@
+# BARTO PETSHOP 
+Elegí hacer un proyecto acerca de un Petshop porque creo que hay muchas ideas que se pueden hacer con respecto a información y productos, y áreas relacionadas como servicios de veterinaria, adiestramiento, peluquería, etc. Y además, puedo seguir mejorandolo en un futuro a medida que aprenda más sobre React JS y lograr un proyecto súper completo para guardar en mi portfolio. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
